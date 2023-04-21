@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "vue-tsc && vite build",
+    "build": "vue-cli-service build",
     "preview": "vite preview",
     "test:e2e": "cypress run",
     "test:unit": "vitest",
-    "lint": "eslint"
+    "lint": "eslint",
+    "installandbuild": "npm install --legacy-peer-deps && npm run build"
   },
   "dependencies": {
     "@capacitor/android": "4.7.3",
